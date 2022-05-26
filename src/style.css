@@ -1,198 +1,174 @@
-*{
-    margin: 0px;
-    padding: 0px;
+/* Basic Style */
+
+body {
+	background: #fff;
+	color: #333;
+	font-family: Lato, sans-serif;
+	background-color:#e4e4e4;
 }
 
-body{
-    font-family: Verdana;
-    font-size: 0.8em;
+.container {
+	display: block;
+	width: 400px;
+	margin: 10px auto 100px;
+	background-color:#fff;
+	padding:0px 10px 10px 10px;
+	border-radius:10px
 }
 
-/*
- * Common Styles
- */
-
-#header, #main, #footer{
-    padding: 20px;
+h2 {
+	text-align:center;
+	padding-top:10px;
+	margin-bottom:0px;
 }
 
-#main{
-    padding-top: 0px;
-    padding-bottom: 0px;
+ul {
+	margin: 0;
+	padding: 0;
 }
 
-#logo{
-    font-size: 32px;
-    margin-bottom: 50px;
+li * {
+	float: left;
 }
 
-#menu, 
-#footer-links{
-    list-style: none;
-    overflow: hidden;
+li,
+h3 {
+	clear: both;
+	list-style: none;
 }
 
-#menu li, 
-#footer-links li{
-    float: left;
+input,
+button {
+	outline: none;
 }
 
-#menu li a, 
-#footer-links li a{
-    padding: 10px 50px;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    color: #000000; 
+button {
+	background: none;
+	border: 0px;
+	color: #888;
+	font-size: 15px;
+	width: 60px;
+	margin: 10px 0 0;
+	font-family: Lato, sans-serif;
+	cursor: pointer;
 }
 
-#menu li a{
-    font-size: 16px;
-    font-weight: bold;
-}
-
-#menu li:first-child a, 
-#footer-links li:first-child a{
-    padding-left: 0px;
-}
-
-#footer-links{
-    width: 40%;
-    margin: 0 auto;
-}
-
-/*
- * Home Page
- */
-
- #main p{
-    font-size: 15px;
-    word-spacing: 2px;
-    margin-bottom: 10px;
-    text-align: justify;
-}
-
-/*
- * Product Page
- */
-
- #products{
-    overflow: hidden;
- }
-
- #products .product{
-    float: left;
-    margin-bottom: 20px;
-    max-width: 280px;
-    padding: 20px;
-    text-align: center;
- }
-
- #products .product .title a{
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: light;
-    color: #000000;
- }
-
-
- #products .product .add-to-cart, #contact-form .submit input[type="submit"] {
-    width:500px;
-    background: #3e9cbf; 
-    padding: 8px 14px 10px; 
-    border:1px solid #3e9cbf;
-    cursor:pointer; 
-    font-size:1.2em;
-    display: block;
-    max-width: 60%;
-    margin: 20px auto 0px;
-    text-decoration: none;
-    text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); 
-    color: #fff;
-    -webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
-    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
-    box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
- #products .product .add-to-cart:hover,  
- #products .product .add-to-cart:focus, 
- #contact-form .submit input[type="submit"]:hover, 
- #contact-form .submit input[type="submit"]:focus {
-    color:#dfe7ea;
-    -webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
-    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
-    box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
-}
-
-#contact-form .submit input[type="submit"]{
-    width: 100px;
-    display: inline;
-    font-size: 1em;
+button:hover {
+	color: #333;
 }
 
 
-#contact-form label, #contact-form .form-control{
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px 0px;
-} 
+/* Heading */
 
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 60%;
-    margin-left:20%;
+h3,
+label[for='new-task'] {
+	color: #333;
+	font-weight: 700;
+	font-size: 15px;
+	border-bottom: 2px solid #333;
+	padding: 20px 0 10px;
+	margin: 0;
+	text-transform: uppercase;
 }
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+input[type="text"] {
+	margin: 0;
+	font-size: 18px;
+	line-height: 18px;
+	height: 18px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	background: #fff;
+	border-radius: 6px;
+	font-family: Lato, sans-serif;
+	color: #888;
 }
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-#empty{
-    margin-left:75%;
-    padding:10px;
-    margin-top:10%;
-   
-    color:black;
-    -webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
-    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
-    box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
-}
-#empty{
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  cursor: pointer;
-  border: 3px solid;
-  padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-#empty:active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
-}
-
-@media (min-width: 768px) {
-  #empty {
-    padding: 0.25em 0.75em;
-  }
+input[type="text"]:focus {
+	color: #333;
 }
 
 
+/* New Task */
+
+label[for='new-task'] {
+	display: block;
+	margin: 0 0 20px;
+}
+
+input#new-task {
+	float: left;
+	width: 318px;
+}
+
+p > button:hover {
+	color: #0FC57C;
+}
+
+
+/* Task list */
+
+li {
+	overflow: hidden;
+	padding: 20px 0;
+	border-bottom: 1px solid #eee;
+}
+
+li > input[type="checkbox"] {
+	margin: 0 10px;
+	position: relative;
+	top: 15px;
+}
+
+li > label {
+	font-size: 18px;
+	line-height: 40px;
+	width: 237px;
+	padding: 0 0 0 11px;
+}
+
+li > input[type="text"] {
+	width: 226px;
+}
+
+li > .delete:hover {
+	color: #CF2323;
+}
+
+
+/* Completed */
+
+#completed-tasks label {
+	text-decoration: line-through;
+	color: #888;
+}
+
+
+/* Edit Task */
+
+ul li input[type=text] {
+	display: none;
+}
+
+ul li.editMode input[type=text] {
+	display: block;
+}
+
+ul li.editMode label {
+	display: none;
+}
+#button1{
+	
+		background: none;
+		border: 0px;
+		color: #888;
+		font-size: 15px;
+		width: 60px;
+		margin: 10px 0 0;
+		font-family: Lato, sans-serif;
+		cursor: pointer;
+	
+}
+#button1:hover {
+	color: #333;
+}
